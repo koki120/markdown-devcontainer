@@ -3,7 +3,7 @@
     "markdown-pdf.includeDefaultStyles": false,
     // 入手したCSSのパスを指定
     "markdown-pdf.styles": [
-        "./github-markdown.css"
+        "/workspaces/markdown-dev/.vscode/github-markdown.css"
     ],
     "[markdown]": {
         "editor.quickSuggestions": {
