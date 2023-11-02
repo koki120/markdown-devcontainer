@@ -1,0 +1,22 @@
+{
+    "name": "Markdown Dev",
+    "runArgs": ["--name", "markdown-dev"],
+    "build": {
+    "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "vscode",
+    "mounts": [
+		"source=${localWorkspaceFolderBasename},target=${containerWorkspaceFolder}/documents,type=volume"
+	],
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"extensions": [
+				"DavidAnson.vscode-markdownlint",
+                "tomoki1207.pdf",
+                "yzhang.markdown-all-in-one",
+                "yzane.markdown-pdf"
+			]
+        }
+    }    
+}
