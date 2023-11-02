@@ -1,14 +1,17 @@
 {
-    "name": "Markdown Dev",
-    "runArgs": ["--name", "markdown-dev"],
-    "build": {
-    "dockerfile": "Dockerfile"
-    },
-    "remoteUser": "vscode",
-    "mounts": [
+	"name": "Markdown Dev",
+	"runArgs": [
+		"--name",
+		"markdown-dev"
+	],
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"remoteUser": "vscode",
+	"mounts": [
 		"source=${localWorkspaceFolderBasename},target=${containerWorkspaceFolder}/documents,type=volume"
 	],
-    "customizations": {
+	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
 			"extensions": [
@@ -19,6 +22,6 @@
 				"streetsidesoftware.code-spell-checker",
 				"shd101wyy.markdown-preview-enhanced"
 			]
-        }
-    }    
+		}
+	}
 }
