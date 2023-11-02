@@ -24,3 +24,5 @@ RUN addgroup -S -g "${GROUP_ID}" "${USER_NAME}" && \
   chown -R "${USER_ID}:${GROUP_ID}" /workspaces/markdown-dev/documents 
 
 USER "${USER_NAME}"
+
+CMD ["/bin/ash"]
