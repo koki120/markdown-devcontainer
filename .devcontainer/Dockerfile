@@ -4,10 +4,9 @@ ARG USER_ID=10000
 ARG GROUP_ID=10000
 ARG USER_NAME=vscode
 
-RUN apt-get update && apt-get install -y \
-  chromium-browser \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/*
+RUN apk update && apk add --no-cache \
+    chromium \
+    && rm -rf /var/cache/apk/*
 
 RUN addgroup -S -g "${GROUP_ID}" "${USER_NAME}" && \
   adduser -u "${USER_ID}" -G "${USER_NAME}" -D "${USER_NAME}" && \
