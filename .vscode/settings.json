@@ -11,8 +11,8 @@
             "strings": "on",
             "other": "on"
         },
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
+     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnSave": true,
     "markdown-pdf.executablePath": "/usr/bin/chromium-browser"
 }
