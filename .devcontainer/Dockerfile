@@ -6,9 +6,6 @@ ARG USER_NAME=vscode
 
 RUN apk update && apk add --no-cache \
   chromium \
-  ask-japanese \
-  fonts-ipafont \
-  fonts-ipaexfont \
   curl \
   unzip \
   fontconfig \
@@ -18,6 +15,7 @@ RUN apk update && apk add --no-cache \
 RUN curl -o /tmp/NotoSansCJKjp-hinted.zip https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
   && unzip -o -d /usr/share/fonts/noto /tmp/NotoSansCJKjp-hinted.zip \
   && chmod 644 /usr/share/fonts/noto/*.otf \
+  &&  && rm /tmp/NotoSansCJKjp-hinted.zip \
   && fc-cache -fv
 
 RUN addgroup -S -g "${GROUP_ID}" "${USER_NAME}" && \
