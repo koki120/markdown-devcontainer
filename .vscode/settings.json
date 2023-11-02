@@ -5,4 +5,13 @@
     "markdown-pdf.styles": [
         "./github-markdown.css"
     ],
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "editor.formatOnSave": true
 }

@@ -13,9 +13,11 @@
 		"vscode": {
 			"extensions": [
 				"DavidAnson.vscode-markdownlint",
-                "tomoki1207.pdf",
-                "yzhang.markdown-all-in-one",
-                "yzane.markdown-pdf"
+				"tomoki1207.pdf",
+				"yzhang.markdown-all-in-one",
+				"yzane.markdown-pdf",
+				"streetsidesoftware.code-spell-checker",
+				"shd101wyy.markdown-preview-enhanced"
 			]
         }
     }    
