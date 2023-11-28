@@ -8,9 +8,6 @@
 		"dockerfile": "Dockerfile"
 	},
 	"remoteUser": "vscode",
-	"mounts": [
-		"source=${localWorkspaceFolderBasename},target=${containerWorkspaceFolder}/documents,type=volume"
-	],
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
