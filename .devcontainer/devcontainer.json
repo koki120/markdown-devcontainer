@@ -1,23 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/markdown
 {
-	"name": "Markdown Dev",
-	"runArgs": [
-		"--name",
-		"markdown-dev"
-	],
-	"build": {
-		"dockerfile": "Dockerfile"
+	"name": "Markdown Editing",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"build":{
+		"dockerfile": "dockerfile"
 	},
-	"remoteUser": "vscode",
+	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"DavidAnson.vscode-markdownlint",
-				"tomoki1207.pdf",
 				"yzhang.markdown-all-in-one",
-				"yzane.markdown-pdf",
 				"streetsidesoftware.code-spell-checker",
-				"shd101wyy.markdown-preview-enhanced"
+				"DavidAnson.vscode-markdownlint",
+				"shd101wyy.markdown-preview-enhanced",
+				"bierner.github-markdown-preview",
+				"tomoki1207.pdf"
 			]
 		}
 	}

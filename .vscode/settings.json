@@ -1,10 +1,5 @@
 {
-    // github-markdown.cssにすべて任せるので、デフォルトのスタイルを無効化
-    "markdown-pdf.includeDefaultStyles": false,
-    // 入手したCSSのパスを指定
-    "markdown-pdf.styles": [
-        "/workspaces/markdown-dev/.vscode/github-markdown.css"
-    ],
+
     "[markdown]": {
         "editor.quickSuggestions": {
             "comments": "on",
@@ -12,7 +7,8 @@
             "other": "on"
         },
     },
-     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnSave": true,
-    "markdown-pdf.executablePath": "/usr/bin/chromium-browser"
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "explicit"
+    }
 }

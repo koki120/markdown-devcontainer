@@ -1,0 +1,8 @@
+FROM "pandoc/latex"
+
+# 日本語フォント導入
+RUN apk --update --no-cache add msttcorefonts-installer fontconfig && \
+    update-ms-fonts && \
+    fc-cache -f && \
+    tlmgr update --self --all && \
+    tlmgr install collection-langjapanese
