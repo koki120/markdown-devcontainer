@@ -1,10 +1,12 @@
 pdf-engine: lualatex
 number-sections: true
 top-level-division: chapter # 採番をh2から始める。
+variables:
+    lang: ja
 filters:
     - pandoc-crossref
+
 metadata:
-    listings: true
     documentclass: ltjsarticle
     luatexjapresetoptions: fonts-noto-cjk
     figureTitle: "図"
