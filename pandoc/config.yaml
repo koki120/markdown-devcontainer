@@ -1,5 +1,6 @@
 pdf-engine: lualatex
 number-sections: true
+top-level-division: chapter # 採番をh2から始める。
 filters:
     - pandoc-crossref
 metadata:
