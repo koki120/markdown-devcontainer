@@ -58,3 +58,11 @@ date: \today
 
 [@fig:myfig]は私が作ったアプリの画像です。
 ```
+
+#### コードの参照の仕方
+
+`{#lst:tag_name caption="title"}`とコードブロックにつけることでタグとタイトルをつけることができる。参照は、`[@lst:tag_name]`でできる。
+
+```python {#lst:my-code caption="私のコード"}
+print(""Hello World)
+```
