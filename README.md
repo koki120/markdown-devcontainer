@@ -74,6 +74,37 @@ date: \today
 ![私のアプリ](app.png){ width=50% }
 ```
 
+#### 配置調整
+
+画像を\<div id="fig:tag">\</div>で囲うことで複数の画像をひとまとめにできる。参照は[@fig:tag]でできる。
+
+```markdown
+<div id="fig:tag">
+
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+
+fig:tagのキャプション
+</div>
+```
+
+下記のように画像が二つだけの場合、改行せずに画像を２つ縦に並べるとエラー出るので注意が必要
+
+```markdown
+<div id="fig:tag">
+
+![私のアプリ](app.png){#fig:tag_1 width=50% }
+![私のアプリ](app.png){#fig:tag_1 width=50% }
+
+fig:tagのキャプション
+</div>
+```
+
 #### コードの参照の仕方
 
 `{#lst:tag_name caption="title"}`とコードブロックにつけることでタグとタイトルをつけることができる。参照は、`[@lst:tag_name]`でできる。
