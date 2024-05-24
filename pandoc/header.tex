@@ -1,3 +1,25 @@
+\usepackage{subfig} % 画像を横並びにするために必要
+\newenvironment{pandoccrossrefsubfigures}
+{
+  \begin{figure}
+  \centering
+}
+{
+  \end{figure}
+}
+
+% 画像を記述された場所に挿入(デフォルトではページ上部に挿入されてしまう)
+\usepackage{float}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
+
+% リスティングの見た目の設定
 \lstset{
     basicstyle={\ttfamily},
     frame={tb},
@@ -6,4 +28,4 @@
     showtabs=false,
     showstringspaces=false
 }
-\renewcommand{\lstlistingname}{コード}
+\renewcommand{\lstlistingname}{コード} % メタデータのlistingTitleが働かないので追加した。
