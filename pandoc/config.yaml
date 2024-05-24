@@ -4,6 +4,7 @@ listings: true
 top-level-division: chapter # 採番をh2から始める。
 variables:
     lang: ja
+    indent: true # 字下げ
 filters:
     - pandoc-crossref
 include-in-header:
@@ -11,7 +12,6 @@ include-in-header:
 metadata:
     listings: true
     documentclass: ltjsarticle
-    luatexjapresetoptions: fonts-noto-cjk
     figureTitle: "図"
     tableTitle: "表"
     listingTitle: "コード"
