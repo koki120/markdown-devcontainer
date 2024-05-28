@@ -94,7 +94,24 @@ fig:tagのキャプション
 </div>
 ```
 
-下記のように画像が二つだけの場合、改行せずに画像を２つ縦に並べるとエラー出るので注意が必要
+pandocでは`<div>`と`:::`は同等なので以下のようにも書ける。
+
+```markdown
+::: {#fig:tag}
+
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+
+![私のアプリ](app.png){#fig:tag_1 width=33% }\hfill
+![私のアプリ](app.png){#fig:tag_1 width=33% }\hfill
+![私のアプリ](app.png){#fig:tag_1 width=33% }
+
+fig:tagのキャプション
+:::
+```
+
+下記のように画像を横並びにする(行数1,列数n)場合、それぞれの画像のキャプションとlabelは反映されなので注意。
 
 ```markdown
 <div id="fig:tag">
