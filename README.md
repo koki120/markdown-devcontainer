@@ -76,7 +76,8 @@ date: \today
 
 #### 配置調整
 
-画像を\<div id="fig:tag">\</div>で囲うことで複数の画像をひとまとめにできる。参照は[@fig:tag]でできる。
+画像を`<div id="fig:tag"></div>`で囲うことで複数の画像をひとまとめにできる。参照は[@fig:tag]でできる。
+また、`\hfill`で画像の横の隙間を等間隔にできる。
 
 ```markdown
 <div id="fig:tag">
@@ -85,8 +86,8 @@ date: \today
 ![私のアプリ](app.png){#fig:tag_1 width=33% }
 ![私のアプリ](app.png){#fig:tag_1 width=33% }
 
-![私のアプリ](app.png){#fig:tag_1 width=33% }
-![私のアプリ](app.png){#fig:tag_1 width=33% }
+![私のアプリ](app.png){#fig:tag_1 width=33% }\hfill
+![私のアプリ](app.png){#fig:tag_1 width=33% }\hfill
 ![私のアプリ](app.png){#fig:tag_1 width=33% }
 
 fig:tagのキャプション
