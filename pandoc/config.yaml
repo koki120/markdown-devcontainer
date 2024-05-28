@@ -5,6 +5,8 @@ top-level-division: chapter # 採番をh2から始める。
 variables:
     lang: ja
     indent: true # 字下げ
+    geometry: margin=1.3cm # 余白
+    date: 作成日 \today
 filters:
     - pandoc-crossref
 include-in-header:
