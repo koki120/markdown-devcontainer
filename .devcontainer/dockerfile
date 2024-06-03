@@ -1,8 +1,11 @@
-FROM "pandoc/latex"
+# ベースイメージとして pandoc を指定
+FROM pandoc/latex
+
+# pandoc の設定ファイルやスクリプトをコピー
+COPY ../pandoc .
 
 # 日本語フォント導入
-RUN apk --update --no-cache add msttcorefonts-installer fontconfig && \
-    update-ms-fonts && \
+RUN apk --update --no-cache add fontconfig ttf-dejavu && \
     fc-cache -f && \
     tlmgr update --self --all && \
     tlmgr install collection-langjapanese
