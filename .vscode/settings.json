@@ -1,14 +1,14 @@
 {
-
     "[markdown]": {
         "editor.quickSuggestions": {
             "comments": "on",
             "strings": "on",
             "other": "on"
         },
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
     },
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.markdownlint": "explicit"
+        "source.fixAll.markdownlint": "always"
     }
 }
