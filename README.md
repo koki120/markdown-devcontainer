@@ -146,9 +146,12 @@ $${#eq:Amdahl}
 ##### 数式の改行
 
 `aligned`で囲むことで`\\`を使って改行をすることができる。`&`を基準として縦のラインをそろえることができる。
+
+```markdown
 $$
 \begin{aligned}
 x(t + \Delta t) &= x(t) + v(t) \Delta t + O(\Delta t^2)\\
 v(t + \Delta t) &= v(t) + a(t) \Delta t + O(\Delta t^2)
 \end{aligned}
 $${#eq:Taylor-expansion-of-simple-harmonic-motion}
+```
