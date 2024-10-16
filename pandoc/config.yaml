@@ -5,8 +5,8 @@ top-level-division: chapter # 採番をh2から始める。
 variables:
     lang: ja
     indent: true # 字下げ
-    geometry: margin=1.3cm # 余白
-    date: 作成日 \today
+    # geometry: margin=1.3cm # 余白
+    date: 提出日 \today
 filters:
     - pandoc-crossref
 include-in-header:
@@ -14,6 +14,7 @@ include-in-header:
 metadata:
     listings: true
     documentclass: ltjsarticle
+#    classoption: twocolumn
     figureTitle: "図"
     tableTitle: "表"
     listingTitle: "コード"
